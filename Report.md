@@ -22,7 +22,7 @@ In order to solve the problem the RL Agent has been trained with the DQN algorit
 
 The general expression of the DQN algorith is:
 
-![DQN Algorithm](../images/dqn_algorithm.png)
+![DQN Algorithm](images/dqn_algorithm.png)
 
 Please, read the [research paper](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) for the complete details of the algorithm.
 
