@@ -11,7 +11,7 @@ Welcome to my implementation of the Udacity DRL Nanodegree's P1. In this reposit
 * How to install the environment and dependences
 * Implementation details
 * How to run and train the experiment
-* Final report of the agent performance 
+* Final report of the agent performance
 * Source code of the implementation in PyTorch and Python 3
 
 ### 2. Problem description (the environment)
@@ -20,7 +20,6 @@ For this project, we have to train an agent to navigate (and collect bananas!) i
 
 ![Image of the environment]
 (https://s3.amazonaws.com/video.udacity-data.com/topher/2018/June/5b1ab4b0_banana/banana.gif)
-
 
 A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana. Thus, the goal of your agent is to collect as many yellow bananas as possible while avoiding blue bananas.
 
@@ -56,8 +55,23 @@ Then, place the file in the p1_navigation/ folder in the DRLND GitHub repository
 
 ### 4. Implementation details
 
-I've implemented the basic DQN algorithm in order to solve this problem.
+I've implemented the basic **DQN** algorithm in order to solve this problem.
 
+You can find a description of this algorithm [here](https://towardsdatascience.com/introduction-to-various-reinforcement-learning-algorithms-i-q-learning-sarsa-dqn-ddpg-72a5e0cb6287)  
+
+You will find the details of the implementation in the class **Agent** (in the dqn_agent.py file) and the details of the network used in the class **QNetwork** (in the model.py file)
+
+Please, see the **Report.pdf** document for details
+
+### 5. Train and run the Agent
+
+In order to train and/or run the Agent, just follow the **Navigation.ipynb** Jupyter Notebook.  
+
+When training the environment, set `train_mode=True`, so that the line for resetting the environment looks like the following:
+
+```python
+env_info = env.reset(train_mode=True)[brain_name]
+```
 
 
 
