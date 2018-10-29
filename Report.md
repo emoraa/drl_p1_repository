@@ -32,7 +32,7 @@ It is also important to understand the two key techniques applied in order to im
 
 When the agent interacts with the environment, the sequence of experience tuples can be highly correlated. The naive Q-learning algorithm that learns from each of these experience tuples in sequential order runs the risk of getting swayed by the effects of this correlation. By instead keeping track of a replay buffer and using experience replay to sample from the buffer at random, we can prevent action values from oscillating or diverging catastrophically.
 
-The replay buffer contains a collection of experience tuples (SS, AA, RR, S'S). The tuples are gradually added to the buffer as we are interacting with the environment.
+The replay buffer contains a collection of experience tuples ({SS}, {AA}, {RR}, {S'S}). The tuples are gradually added to the buffer as we are interacting with the environment.
 
 #### Fixed Q-Targets
 
